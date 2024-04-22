@@ -5,14 +5,14 @@ JAF-003,the krautback,jaffle,1200,lamb and pork bratwurst with house-pickled cab
 JAF-004,flame impala,jaffle,1400,"pulled pork and pineapple al pastor marinated in ghost pepper sauce, kevin parker's favorite! "
 JAF-005,mel-bun,jaffle,1200,"melon and minced beef bao, in a jaffle, savory and sweet"
 BEV-001,tangaroo,beverage,600,mango and tangerine smoothie
-BEV-002,chai and mighty,beverage,500,oatmilk chai latte with protein boost
-BEV-003,vanilla ice,beverage,600,iced coffee with house-made french vanilla syrup
+BEV-002,chai and mighty,beverage,500,"oatmilk chai latte with protein boost"
+BEV-003,vanilla ice,beverage,600,"iced coffee with house-made french vanilla syrup"
 BEV-004,for richer or pourover ,beverage,700,daily selection of single estate beans for a delicious hot pourover
 BEV-005,adele-ade,beverage,400,"a kiwi and lime agua fresca, hello from the other side of thirst"
-TEC-001, cat vr headset, tech, 8000, "vr headset for cats to stimulate exploring fishbowl or chasing mice in a field"
-TEC-002, cat code challenge, tech, 5000, "coding challenge for cat to learn to program, dispense treat when correct"
-TEC-003, cat ai mood prediction, tech, 4000, "AI analysis of cat behavior in session to predict mood"
-TEC-004, cat bulter, tech, 5000, "Robo-bulter that your cat can control for 1 hour"
-CAT-001, cat visit 1 hour, visit, 4000, "visit for 1 cat for 1 hour"
-CAT-002, cat visit private, visit, 9000, "private party for cats"
+TEC-001,cat vr headset,tech,8000,"vr headset for cats to stimulate exploring fishbowl or chasing mice in a field"
+TEC-002,cat code challenge,tech,5000,"coding challenge for cat to learn to program, dispense treat when correct"
+TEC-003,cat ai mood prediction,tech,4000,"AI analysis of cat behavior in session to predict mood"
+TEC-004,cat bulter,tech,5000,"Robo-bulter that your cat can control for 1 hour"
+CAT-001,cat visit 1 hour,visit,4000,"visit for 1 cat for 1 hour"
+CAT-002,cat visit private,visit,9000,"private party for cats"
 
