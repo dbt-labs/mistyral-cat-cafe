@@ -25,7 +25,9 @@ renamed as (
         ---------- booleans
         coalesce(type = 'jaffle', false) as is_food_item,
 
-        coalesce(type = 'beverage', false) as is_drink_item
+        coalesce(type = 'beverage', false) as is_drink_item,
+        coalesce(type = 'visit', false) as is_visit_item,
+        coalesce(type = 'tecj', false) as is_tech_item,
 
     from source
 

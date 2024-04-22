@@ -28,6 +28,10 @@ models:
         description: A boolean indicating if this order included any food items.
       - name: is_drink_order
         description: A boolean indicating if this order included any drink items.
+      - name: is_visit_order
+        description: A boolean indicating if this order included any visit items.        
+      - name: is_tech_order
+        description: A boolean indicating if this order included any tech items.
 
 unit_tests:
   - name: test_order_items_compute_to_bools_correctly
@@ -104,6 +108,10 @@ semantic_models:
         type: categorical
       - name: is_drink_order
         type: categorical
+      - name: is_tech_order
+        type: categorical
+      - name: is_visit_order
+        type: categorical
       - name: customer_order_number
         type: categorical
     measures:
@@ -165,6 +173,23 @@ metrics:
       measure: order_count
     filter: |
       {{ Dimension('order_id__is_drink_order') }} = true
+  - name: tech_orders
+    description: Count of orders that contain tech order items
+    label: Tech Orders
+    type: simple
+    type_params:
+      measure: order_count
+    filter: |
+      {{ Dimension('order_id__is_tech_order') }} = true      
+  - name: visit_orders
+    description: Count of orders that contain visit order items
+    label: Tech Orders
+    type: simple
+    type_params:
+      measure: order_count
+    filter: |
+      {{ Dimension('order_id__is_visit_order') }} = true 
+
 
 saved_queries:
   - name: order_metrics
