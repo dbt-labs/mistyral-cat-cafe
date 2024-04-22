@@ -50,7 +50,7 @@ joined as (
         products.is_food_item,
         products.is_drink_item,
         products.is_tech_item,
-        products.is_visit_item
+        products.is_visit_item,
 
         order_supplies_summary.supply_cost
 
