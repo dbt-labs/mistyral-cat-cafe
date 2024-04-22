@@ -1,6 +1,6 @@
 config-version: 2
 
-name: "mistyralcatcafe"
+name: "mistyral_cat_cafe"
 version: "3.0.0"
 require-dbt-version: ">=1.5.0"
 
