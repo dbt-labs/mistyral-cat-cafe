@@ -31,7 +31,19 @@ order_items_summary as (
                 when is_drink_item then 1
                 else 0
             end
-        ) as count_drink_items
+        ) as count_drink_items,
+        sum(
+            case
+                when is_tech_item then 1
+                else 0
+            end
+        ) as count_tech_items,
+        sum(
+            case
+                when is_visit_item then 1
+                else 0
+            end
+        ) as count_visit_items                        
 
     from order_items
 
@@ -50,7 +62,9 @@ compute_booleans as (
         order_items_summary.count_drink_items,
         order_items_summary.count_order_items,
         order_items_summary.count_food_items > 0 as is_food_order,
-        order_items_summary.count_drink_items > 0 as is_drink_order
+        order_items_summary.count_drink_items > 0 as is_drink_order,
+        order_items_summary.count_tech_items > 0 as is_tech_order,
+        order_items_summary.count_visit_items > 0 as is_visit_order
 
     from orders
 

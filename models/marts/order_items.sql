@@ -49,6 +49,8 @@ joined as (
         products.product_price,
         products.is_food_item,
         products.is_drink_item,
+        products.is_tech_item,
+        products.is_visit_item,
 
         order_supplies_summary.supply_cost
 
