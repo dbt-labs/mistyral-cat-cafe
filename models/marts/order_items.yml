@@ -1,5 +1,6 @@
 models:
   - name: order_items
+    description: a table with all the order items purchases 
     columns:
       - name: order_item_id
         tests:
