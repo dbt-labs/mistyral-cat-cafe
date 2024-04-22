@@ -3,7 +3,7 @@
 models: 
   - name: products
     group: product
-    acces: public
+    access: public
 
 semantic_models:
   #The name of the semantic model.
