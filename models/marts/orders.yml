@@ -183,7 +183,7 @@ metrics:
       {{ Dimension('order_id__is_tech_order') }} = true      
   - name: visit_orders
     description: Count of orders that contain visit order items
-    label: Tech Orders
+    label: Visit Orders
     type: simple
     type_params:
       measure: order_count
@@ -200,6 +200,8 @@ saved_queries:
         - order_total
         - food_orders
         - drink_orders
+        - tech_orders
+        - visit_orders
       group_by:
         - TimeDimension('metric_time', 'day')
     exports:
