@@ -1,3 +1,10 @@
+# in models/marketing/__models.yml
+
+models: 
+  - name: products
+    group: product
+    acces: public
+
 semantic_models:
   #The name of the semantic model.
   - name: products
