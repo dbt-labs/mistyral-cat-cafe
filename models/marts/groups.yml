@@ -1,0 +1,7 @@
+# in models/__groups.yml
+
+groups: 
+  - name: product
+    owner:
+        name: Amy Chen
+        email: amy@dbtlabs.com
