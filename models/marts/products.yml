@@ -2,6 +2,7 @@
 
 models: 
   - name: products
+    description: product table that lists all the product products
     group: product
     access: public
 
