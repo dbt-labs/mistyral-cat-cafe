@@ -102,6 +102,6 @@ saved_queries:
         - Entity('customer')
     exports:
       - name: customer_order_metrics
-        schema: dbt_achen
         config:
           export_as: table
+          schema: dbt_achen
