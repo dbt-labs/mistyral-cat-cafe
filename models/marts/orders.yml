@@ -193,6 +193,7 @@ metrics:
 
 saved_queries:
   - name: order_metrics
+    schema: dbt_achen
     query_params:
       metrics:
         - orders
