@@ -13,12 +13,16 @@ semantic_models:
     #Dimensions. Either categorical or time. These add additonal context to metrics. The typical querying pattern is Metric by Dimension.
     dimensions:
       - name: supply_id
+        label: supply id
         type: categorical
       - name: product_id
+        label: product id
         type: categorical
       - name: supply_name
+        label: supply name
         type: categorical
       - name: supply_cost
+        label: supply cost
         type: categorical
       - name: is_perishable_supply
         type: categorical

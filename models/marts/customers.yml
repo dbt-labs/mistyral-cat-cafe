@@ -44,14 +44,18 @@ semantic_models:
     dimensions:
       - name: customer_name
         type: categorical
+        label: customer name
       - name: customer_type
         type: categorical
+        label: customer type
       - name: first_ordered_at
         type: time
+        label: first ordered at
         type_params:
           time_granularity: day
       - name: last_ordered_at
         type: time
+        label: last ordered at
         type_params:
           time_granularity: day
     measures:

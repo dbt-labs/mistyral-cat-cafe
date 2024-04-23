@@ -11,8 +11,10 @@ semantic_models:
         expr: location_id
     dimensions:
       - name: location_name
+        label: location name
         type: categorical
       - name: opened_at
+        label: opened at
         expr: opened_at
         type: time
         type_params:

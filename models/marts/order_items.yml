@@ -69,6 +69,10 @@ semantic_models:
         type: categorical
       - name: is_drink_item
         type: categorical
+      - name: is_tech_item
+        type: categorical   
+      - name: is_visit_item
+        type: categorical             
     measures:
       - name: revenue
         description: The revenue generated for each order item. Revenue is calculated as a sum of revenue associated with each product in an order.

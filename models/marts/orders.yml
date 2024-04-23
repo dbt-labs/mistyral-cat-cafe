@@ -97,11 +97,13 @@ semantic_models:
         expr: customer_id
     dimensions:
       - name: ordered_at
+        label: ordered at
         expr: ordered_at
         type: time
         type_params:
           time_granularity: day
       - name: order_total_dim
+        label: order total
         type: categorical
         expr: order_total
       - name: is_food_order
@@ -113,6 +115,7 @@ semantic_models:
       - name: is_visit_order
         type: categorical
       - name: customer_order_number
+        label: customer order number
         type: categorical
     measures:
       - name: order_total
