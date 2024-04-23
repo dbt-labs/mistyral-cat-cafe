@@ -22,8 +22,10 @@ semantic_models:
     dimensions:
       - name: product_name
         type: categorical
+        label: product_name
       - name: product_type
         type: categorical
+        label: product_type
       - name: product_description
         type: categorical
       - name: is_food_item

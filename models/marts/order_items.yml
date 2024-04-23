@@ -46,7 +46,7 @@ semantic_models:
     defaults:
       agg_time_dimension: ordered_at
     description: |
-      Items contatined in each order. The grain of the table is one row per order item.
+      Items contained in each order. The grain of the table is one row per order item.
     model: ref('order_items')
     entities:
       - name: order_item
@@ -61,6 +61,7 @@ semantic_models:
     dimensions:
       - name: ordered_at
         expr: ordered_at
+        label: ordered at
         type: time
         type_params:
           time_granularity: day
@@ -73,18 +74,27 @@ semantic_models:
         description: The revenue generated for each order item. Revenue is calculated as a sum of revenue associated with each product in an order.
         agg: sum
         expr: product_price
+        label: revenue 
       - name: food_revenue
         description: The revenue generated for each order item. Revenue is calculated as a sum of revenue associated with each product in an order.
         agg: sum
         expr: case when is_food_item = 1 then product_price else 0 end
+        label: food revenue
       - name: drink_revenue
         description: The revenue generated for each order item. Revenue is calculated as a sum of revenue associated with each product in an order.
         agg: sum
         expr: case when is_drink_item = 1 then product_price else 0 end
+        label: drink revenue
       - name: median_revenue
         description: The median revenue generated for each order item.
         agg: median
         expr: product_price
+        label: madiam revenue
+      - name: tech_revenue
+        description: The revenue generated for each order item. Revenue is calculated as a sum of revenue associated with each product in an order.
+        agg: sum 
+        expr: case when is_tech_item = 1 then product_price else 0 end
+        label: tech revenue
 
 metrics:
   # Simple metrics
