@@ -3,11 +3,11 @@ models:
     description: a table with all the order items purchases 
     columns:
       - name: order_item_id
-        tests:
+        data-tests:
           - not_null
           - unique
       - name: order_id
-        tests:
+        data-tests:
           - relationships:
               to: ref('orders')
               field: order_id
@@ -210,5 +210,4 @@ saved_queries:
       - name: revenue_metrics
         config:
           export_as: table
-          schema: dbt_achen
 
