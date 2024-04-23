@@ -203,6 +203,7 @@ saved_queries:
         - TimeDimension('metric_time', 'day')
     exports:
       - name: revenue_metrics
+        schema: dbt_achen
         config:
           export_as: table
-    schema: dbt_achen
+

@@ -193,7 +193,6 @@ metrics:
 
 saved_queries:
   - name: order_metrics
-    schema: dbt_achen
     query_params:
       metrics:
         - orders
@@ -207,5 +206,6 @@ saved_queries:
         - TimeDimension('metric_time', 'day')
     exports:
       - name: order_metrics
+        schema: dbt_achen
         config:
           export_as: table
