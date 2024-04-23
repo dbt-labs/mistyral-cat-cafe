@@ -89,7 +89,7 @@ semantic_models:
         description: The median revenue generated for each order item.
         agg: median
         expr: product_price
-        label: madiam revenue
+        label: median revenue
       - name: tech_revenue
         description: The revenue generated for each order item. Revenue is calculated as a sum of revenue associated with each product in an order.
         agg: sum 
@@ -128,6 +128,19 @@ metrics:
     type: simple
     type_params:
       measure: drink_revenue
+  - name: tech_revenue
+    description: The revenue from tech in each order
+    label: Tech Revenue
+    type: simple
+    type_params:
+      measure: tech_revenue      
+  - name: visit_revenue
+    description: The revenue from visit in each order
+    label: Visit Revenue
+    type: simple
+    type_params:
+      measure: visit_revenue
+
 
   # Ratio Metrics
   - name: food_revenue_pct
@@ -184,6 +197,8 @@ saved_queries:
         - revenue
         - food_revenue
         - drink_revenue
+        - tech_revenue
+        - visit_revenue
       group_by:
         - TimeDimension('metric_time', 'day')
     exports:
