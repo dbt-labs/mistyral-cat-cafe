@@ -22,9 +22,10 @@ renamed as (
         {{ cents_to_dollars('subtotal') }} as subtotal,
         {{ cents_to_dollars('tax_paid') }} as tax_paid,
         {{ cents_to_dollars('order_total') }} as order_total,
+        ordered_at::timestamp_ntz as order_at_tmz,
 
         ---------- timestamps
-        {{ dbt.date_trunc('day','ordered_at') }} as ordered_at
+        {{ dbt.date_trunc('day','order_at_tmz') }} as ordered_at
 
     from source
 
